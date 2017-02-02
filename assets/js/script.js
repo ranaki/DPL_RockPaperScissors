@@ -9,6 +9,9 @@ var numComputerWins = 0;
 $('#reset').click( function() {
     alert("This will reset the game");
     $('#gameResults').empty();
+    numMyWins = 0;
+    numComputerWins = 0;
+    updateWinCount();
 })
 
 $('#rock-btn').click(function(){
